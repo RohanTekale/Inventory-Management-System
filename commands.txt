@@ -1,0 +1,11 @@
+docker-compose exec backend python manage.py createsuperuser   #to create superuser
+
+
+docker-compose exec backend python manage.py makemigration   #to makemigration 
+docker-compose exec backend python manage.py migrate  # to migrate the database
+docker-compose exec db psql -U postgres -d inventory_db 
+docker-compose exec backend python manage.py shell  
+docker-compose down -v 
+docker-compose up --build    
+docker-compose down   
+docker-compose exec app bash

@@ -11,7 +11,7 @@ class PurchaseOrder(models.Model):
 
     order_number = models.CharField(max_length=50, unique=True, db_index=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='purchase_orders')
-    qunatity = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField()
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='PENDING')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
