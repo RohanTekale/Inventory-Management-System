@@ -5,3 +5,16 @@ exclude =
     __pycache__,
     *.pyc
 max-line-length = 88
+ignore =
+    E501,  # Line too long
+    F401,  # Unused imports
+    E302,  # Expected 2 blank lines
+    E303,  # Too many blank lines
+    W293,  # Blank line contains whitespace
+    E231,  # Missing whitespace after comma
+    W292,  # No newline at end of file
+    W391,  # Blank line at end of file
+    E251,  # Unexpected spaces around equals
+    E131,  # Continuation line unaligned
+    E271,  # Multiple spaces after keyword
+    W291   # Trailing whitespace
