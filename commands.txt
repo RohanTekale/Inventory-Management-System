@@ -9,3 +9,4 @@ docker-compose down -v
 docker-compose up --build    
 docker-compose down   
 docker-compose exec app bash
+flake8 . --config=.flake8 # to check the  CI/CD pipeline
