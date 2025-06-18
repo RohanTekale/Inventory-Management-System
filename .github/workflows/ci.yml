@@ -59,7 +59,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run linting
-        run: flake8 .
+        run: flake8 . --config=.flake8
 
       - name: Set up environment variables
         run: |
@@ -91,3 +91,4 @@ jobs:
       #   run: |
       #     docker tag inventory-management-backend:latest myusername/inventory-management-backend:${{ github.sha }}
       #     docker push myusername/inventory-management-backend:${{ github.sha }}
+      
